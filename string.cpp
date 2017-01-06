@@ -1,0 +1,72 @@
+//Pairut Dumkuengthanant
+//64856070
+
+
+#include <iostream>
+#include "String.h"
+using namespace std;
+int main()
+{
+String ff("heythereaw");
+String ss("heytherew");
+String s2("hey");
+String s3("heythere wa");
+
+cout<<"		<--test index-->	"<<endl;
+cout<<ff[8]<<endl;
+cout<<ff[1]<<endl;
+cout<<ff[10]<<endl;
+cout<<ff[4]<<endl;
+cout<<ff.indexOf('e')<<endl;
+cout<<ff.indexOf('y')<<endl;
+cout<<"there: "<<ss.indexOf("there")<<endl;
+cout<<"ey: "<<s2.indexOf("ey")<<endl;
+cout<<"wa: "<<s3.indexOf("wa")<<endl;
+cout<<"we: "<<s3.indexOf("we")<<endl;
+cout<<ff.indexOf(ss)<<endl;
+//cout<<ss<<endl;
+//cout<<s2<<endl;
+//cout<<s3<<endl;
+
+cout<<"		<--test comparison-->		"<<endl;
+bool c1=ff>ss;//F
+bool c2=ff<s2;//T
+bool c3=ff>=s3;//T
+bool c4=ff<ff;//T
+cout<<c1<<"	"<<c2<<"	"<<c3<<"	"<<c4<<endl;
+bool c5=s2==s3;//F
+bool cc1=ff==ff;//T
+bool cc2=s2<=s3;//T
+bool cc3=ff<ss;//T
+bool cc4=s3>=s2;//T
+
+
+cout<<c5<<"	"<<cc1<<"	"<<cc2<<"	"<<cc3<<"	"<<cc4<<endl;
+
+cout<<"		<--concatenation test->		"<<endl;
+String ad=ff+ff;
+String ad2=" 3";
+String ad3=ad2+ad;
+cout<<ad<<" (ad)	"<<ad2<<" (ad2)	"<<ad3<<" (ad3)	"<<endl;
+for(int i=0; i<5;i++){
+	ad2+=ad2;
+	//cout<<ad2<<endl;
+	}
+cout<<ad2<<endl;
+cout<<"\n next"<<endl;
+
+cout<<"		<--reverse, size test-->		"<<endl;
+String n="tryguys";
+cout<<n.reverse()<<endl;
+//cout<<"	"<<endl;
+cout<<"\n"<<s2.reverse()<<endl;
+cout<<ad.reverse()<<endl;
+cout<<ad3.size()<<endl;
+cout<<n.size()<<endl;
+//cout<<ff.size()<<endl;
+//cout<<"hello".size()<<endl;
+//cout<<ff[10]<<endl;
+//cout<<'A'-'B'<<endl;
+//cout<<"last"<<endl;
+return 0;
+}
